@@ -1,0 +1,10 @@
+POLICY ID: LCD L34220
+TITLE: Magnetic Resonance Imaging (MRI) of the Lumbar Spine
+APPLICABLE CPT CODES: 72148, 72149, 72158
+
+COVERED INDICATIONS & MEDICAL NECESSITY CRITERIA:
+1. Non-specific low back pain (ICD-10 M54.50) requires documented failure of at least six (6) consecutive weeks (42 days) of physician-directed conservative management (including physical therapy, home exercise program, and/or anti-inflammatory pharmacotherapy) prior to advanced imaging.
+2. Immediate approval exceptions ("Red Flag" symptoms) waiving the 6-week conservative therapy requirement:
+   - Suspected Cauda Equina Syndrome (saddle anesthesia, acute bowel/bladder dysfunction)
+   - Progressive focal neurological deficit or severe motor weakness
+   - Known or suspected spinal malignancy, epidural abscess, or acute vertebral fracture

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "case_1",
+    "description": "Approval: Lumbar MRI 72148 with 45 days of completed PT + NSAIDs (meets LCD L34220).",
+    "fhir_path": "data/patient_case_002.json",
+    "cpt": "72148",
+    "expected_status": "APPROVED"
+  },
+  {
+    "id": "case_2",
+    "description": "Adverse Determination / HITL: data/patient_case_001.json (only 14 days of PT, no red flags -> fails LCD L34220, triggers HITL stop).",
+    "fhir_path": "data/patient_case_001.json",
+    "cpt": "72148",
+    "expected_status": "PENDING_HITL"
+  },
+  {
+    "id": "case_3",
+    "description": "Guided Error Recovery: Invalid CPT code 99999 or missing FHIR file -> triggers structured LLM recovery guidance.",
+    "fhir_path": "data/patient_case_001.json",
+    "cpt": "99999",
+    "expected_status": "ERROR_RECOVERY"
+  }
+]

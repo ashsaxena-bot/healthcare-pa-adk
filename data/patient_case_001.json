@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "id": "synthea-pa-case-001",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-001",
+        "gender": "male",
+        "birthDate": "1972-04-15",
+        "address": [{ "state": "NJ" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-001",
+        "clinicalStatus": { "coding": [{ "code": "active" }] },
+        "code": {
+          "coding": [{ "system": "http://hl7.org", "code": "M54.50", "display": "Low back pain, unspecified" }]
+        },
+        "onsetDateTime": "2026-10-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "proc-pt-001",
+        "status": "completed",
+        "code": {
+          "coding": [{ "system": "http://ama-assn.org", "code": "97110", "display": "Therapeutic exercises (Physical Therapy)" }]
+        },
+        "performedPeriod": {
+          "start": "2026-10-15",
+          "end": "2026-10-29"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "med-001",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Naproxen 500 MG Oral Tablet"
+        },
+        "authoredOn": "2026-10-02"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "req-mri-001",
+        "status": "active",
+        "intent": "order",
+        "code": {
+          "coding": [{ "system": "http://ama-assn.org", "code": "72148", "display": "MRI Lumbar Spine without contrast" }]
+        },
+        "authoredOn": "2026-11-10",
+        "note": [{ "text": "Persistent lower back pain without radiculopathy. Normal motor strength and reflexes. No bowel/bladder dysfunction." }]
+      }
+    }
+  ]
+}
